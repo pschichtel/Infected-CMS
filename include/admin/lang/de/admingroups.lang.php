@@ -1,0 +1,33 @@
+<?php
+$lang = array(
+    'admingroups'           => 'Admin-Gruppen',
+    'Yes'                   => 'Ja',
+    'No'                    => 'Nein',
+    'submit'                => 'Abschicken',
+    'reset'                 => 'Zurücksetzen',
+    'management'            => 'Verwaltung',
+    'all'                   => 'Alle Rechte (+Extrarechte)',
+    'custom'                => 'Selbst einstellen',
+    'delete'                => 'Löschen',
+    'edit'                  => 'Editieren',
+    'name'                  => 'Gruppenname',
+    'new'                   => 'Neue Gruppe',
+    'rights'                => 'Gruppenrechte',
+    'sure2delete'           => 'Möchten Sie diese Admin-Gruppe wirklich löschen?',
+    'status_added'          => 'Admin-Gruppe erfolgreich hinzugefügt!',
+    'status_updated'        => 'Admin-Gruppe erfolgreich aktualisiert!',
+    'status_deleted'        => 'Admin-Gruppe erfolgreich gelöscht!',
+    'rights_add'            => 'Hinzufügen',
+    'rights_del'            => 'Löschen',
+    'rights_edit'           => 'Editieren',
+    'rights_move'           => 'Verschieben',
+    'rights_reset'          => 'Zurücksetzen',
+    'status_access_denied'  => 'Zugriff verweigert!',
+    'err'                   => 'Folgende Fehler sind aufgetreten',
+    'err_name_missing'      => 'Der Gruppenname fehlt!',
+    'err_forbidden_chars'   => 'Der Gruppenname enthält verbotene Zeichen! Erlaubt: Buchstaben, Zahle, "_" und "-"',
+    'err_no_type'           => 'Es wurde kein Rechtetyp angegeben! (Template fehlerhaft?)',
+    'err_wrong_type'        => 'Es wurde ein unbekannter Rechtetyp angegeben! (Template fehlerhaft?)',
+    'err_name_in_use'       => 'Der Gruppenname wird bereits benutzt!'
+);
+?>

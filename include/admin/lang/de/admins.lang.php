@@ -1,0 +1,32 @@
+<?php
+$lang = array(
+    'admins'                        => 'Administratoren',
+    'management'                    => 'Verwaltung',
+    'retyp'                         => 'wiederholen',
+    'new_password'                  => 'Neues Passwort',
+    'old_password'                  => 'Altes Passwort',
+    'password'                      => 'Passwort',
+    'submit'                        => 'Abschicken',
+    'reset'                         => 'Zurücksetzen',
+    'Yes'                           => 'Ja',
+    'No'                            => 'Nein',
+    'delete'                        => 'Löschen',
+    'edit'                          => 'Bearbeiten',
+    'group'                         => 'Administratorgruppe',
+    'name'                          => 'Name',
+    'new'                           => 'Neuen Administrator anlegen',
+    'sure2delete'                   => 'Möchten Sie diesen Administrator wirklich löschen?',
+    'status_added'                  => 'Administrator hinzugefügt!',
+    'status_deleted'                => 'Administrator gelöscht!',
+    'status_updated'                => 'Administrator aktualisiert!',
+    'status_wrong_password'         => 'Geben Sie das korrekte Passwort ein!',
+    'status_access_denied'          => 'Zugriff verweigert!',
+    'err'                           => 'Folgende Fehler sind aufgetreten',
+    'err_name_missing'              => 'Der Name fehlt!',
+    'err_name_in_use'               => 'Der Name wird bereits benutzt!',
+    'err_forbidden_chars'           => 'Der Name enthält verbotene Zeichen! Erlaubt: Buchstaben, Zahlen, "_" und "-"',
+    'err_pwds_not_equal'            => 'Die Passwort stimmt nicht mit der Wiederholung überein!',
+    'err_pwd_too_short'             => 'Das Passwort ist zu kurz! Mindestlänge: %0%',
+    'err_wrong_pwd'                 => 'Geben Sie das korrekte Passwort ein!'
+);
+?>

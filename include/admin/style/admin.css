@@ -1,0 +1,284 @@
+html, body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+}
+#container {
+    margin: 25px;
+}
+#header {
+    background-color: transparent;
+    padding: 20px 0 20px 80px;
+    margin-bottom: 20px;
+}
+#header h2 {
+    text-align: left;
+}
+#navi {
+    padding: 3px 0 3px 3px;
+    width: 20%;
+    float: left;
+}
+#content {
+    padding: 3px;
+    width: 73%;
+    float: right;
+    margin-bottom: 25px;
+}
+/*
+ *------------------- Navigation -------------------
+ */
+#navi {
+     border: 1px solid black;
+}
+#navi .menu_list {
+    background-color: #DDD;
+    list-style-type: none;
+    padding: 3px;
+    margin: 0;
+    margin-left: 10px;
+}
+#navi .menu_list a {
+    padding: 1px;
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+#navi .menu_list a:active {
+    text-decoration: none;
+    color: black;
+}
+#navi .menu_list a:hover, #navi .menu_list a:focus {
+    text-decoration: none;
+    background-color: #0084ff;
+    color: black;
+}
+#navi .menu_list a:visited {
+    text-decoration: none;
+    color: black;
+}
+#navi .box_header {
+    font-weight: bolder;
+    background-color: #CCC;
+}
+
+#navi_menubutton_container {
+    width: 600px;
+    margin: 0 auto 10px auto;
+    text-align: center;
+}
+#navi_menubutton_container a {
+    display: inline-block;
+    width: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bolder;
+    font-size: 90%;
+}
+/*
+ *---------------- Unternavigation ----------------
+ */
+#sub_navi {
+    margin: 20px 0 0 0;
+    width: 100%;
+    text-align: center;
+    font-size: 0.9em;
+}
+#sub_navi a {
+    color: rgb(0,0,0);
+}
+#sub_navi #back {
+    width: 23%;
+    text-align: left;
+}
+#sub_navi #forward {
+    width: 23%;
+    text-align: right;
+}
+/*
+ *------------------- Übersicht -------------------------
+ */
+#overview div {
+    width: 600px;
+    margin: 10px auto;
+}
+#overview fieldset {
+    width: 600px;
+    margin: 10px auto;
+    line-height: 95%;
+    display: block;
+}
+#overview fieldset span {
+    font-weight: bolder;
+}
+/*
+ *------------------- Navi-Panel -------------------------
+ */
+#content table {
+    margin: 0 auto 8px auto;
+
+}
+#content table img {
+    border: 0;
+}
+#content table th {
+    padding: 1px 3px 5px 3px;
+}
+#content table th img {
+    width: 120%;
+    height: 120%;
+}
+#content table td {
+    padding: 1px 3px;
+}
+#content table img {
+    vertical-align: text-bottom;
+}
+#navi_add {
+    width: 600px;
+    margin: auto;
+}
+#navi_add select {
+    width: 130px;
+}
+/*
+ *------------------- Impressum - Management -------------------------
+ */
+ .impress_labels {
+     clear: both;
+     width: auto;
+ }
+ #impress, #liability {
+     width: 95.5%;
+ }
+/*
+ *------------------- Eigene Inhalte - Management -------------------------
+ */
+ textarea#selfcontent {
+     width: 95.5%;
+ }
+/*
+ *------------------- Statistiken - Management -------------------------
+ */
+ #stats {
+    width: 600px;
+    margin: 10px auto;
+    padding: 5px;
+ }
+ .stat-box {
+     float: left;
+     margin: 10px;
+ }
+/*
+ *------------------- Logout -------------------------
+ */
+#logout {
+    width: 600px;
+    margin: 10px auto;
+    text-align: center;
+}
+#logout a {
+    color: black;
+}
+/*
+ *------------------- News -------------------------
+ */
+.news textarea#text {
+    width: 95.5%;
+}
+/*
+ *------------------- Allgemeiner Style -------------------------
+ */
+.pos_edit_buttons {
+    padding: 2px;
+    text-align: center;
+}
+.pos_edit_buttons img {
+    border: 0;
+}
+h1 {
+    text-align: center;
+}
+#msg {
+    width: 600px;
+    color: red;
+    margin: 0 auto 10px auto;
+}
+form fieldset {
+    width: 600px;
+    margin: 10px auto;
+    display: block;
+}
+form label {
+    width: 240px;
+    float: left;
+}
+form br {
+    clear: left;
+}
+form hr {
+    border: 1px ridge silver;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+form input, form textarea, form select {
+    width: 300px;
+    margin-left: 10px;
+    font-family: arial;
+    font-size: 0.95em;
+}
+form select {
+    width: 306px;
+}
+form #cookie_info {
+    margin-top: 10px;
+    text-align: center;
+    border: 1px solid green;
+}
+form .submit {
+    display: block;
+    width: 100px;
+    border: 1px solid #aaa;
+    margin-left: auto;
+    margin-right: auto;
+}
+form .reset {
+    display: inline;
+    width: 100px;
+    border: 1px solid #aaa;
+    margin-left: auto;
+    margin-right: auto;
+}
+form .button_container {
+    text-align: center;
+    margin: 10px auto 0 auto;
+}
+.tablerow1 {
+    background-color: #ddd;
+}
+.tablerow2 {
+    background-color: #eee;
+}
+.tablerow1, .tablerow2, .tablerow1 td, .tablerow2 td {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+.tablerow1 a, .tablerow2 a {
+    color: #39f !important;
+    text-decoration: none !important;
+}
+.tablerow1:hover, .tablerow2:hover {
+    background-color: #cfc;
+}
+.speciallink {
+    color: #39f !important;
+    text-decoration: none !important;
+    font-weight: bolder !important;
+}
+#bbcode_container button {
+    border: 1px solid black;
+}

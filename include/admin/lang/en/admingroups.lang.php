@@ -1,0 +1,33 @@
+<?php
+$lang = array(
+    'admingroups'           => 'Admin-Groups',
+    'Yes'                   => 'Yes',
+    'No'                    => 'No',
+    'submit'                => 'Submit',
+    'reset'                 => 'Reset',
+    'management'            => 'Management',
+    'all'                   => 'All rights (+specialright)',
+    'custom'                => 'Make by yourself',
+    'delete'                => 'Delete',
+    'edit'                  => 'Edit',
+    'name'                  => 'Groupname',
+    'new'                   => 'New group',
+    'rights'                => 'Grouprights',
+    'sure2delete'           => 'Are you sure to delete this Admin-group?',
+    'status_added'          => 'Admin-group successfully added!',
+    'status_updated'        => 'Admin-group successfully edited!',
+    'status_deleted'        => 'Admin-group successfully deleted!',
+    'rights_add'            => 'Add',
+    'rights_del'            => 'Delete',
+    'rights_edit'           => 'Edit',
+    'rights_move'           => 'Move',
+    'rights_reset'          => 'Reset',
+    'status_access_denied'  => 'Access denied!',
+    'err'                   => 'The following errors occurrered',
+    'err_name_missing'      => 'The groupname is missing!',
+    'err_forbidden_chars'   => 'The groupname contains forbidden characters! Allowed: Letters, numbers, "_" and "-"',
+    'err_no_type'           => 'No right type was given! (Template broken?)',
+    'err_wrong_type'        => 'A unknown right type was given! (Template broken?)',
+    'err_name_in_use'       => 'The groupname is already in use!'
+);
+?>

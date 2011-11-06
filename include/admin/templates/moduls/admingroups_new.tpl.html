@@ -1,0 +1,28 @@
+<h1>{LANG[admingroups]} - {LANG[management]}</h1>
+<div id="msg">{STATUS}</div>
+<form action="{THIS}" method="post" accept-charset="utf-8">
+    <fieldset>
+        <legend>{LANG[new]}</legend>
+        <label for="groupname">{LANG[name]}</label>
+        <input type="text" name="groupname" id="groupname" value="{GROUPNAME}" /><br />
+        {SPLIT}
+        <label for="type1">{LANG[all]}:</label>
+        <input type="radio" name="type" id="type1" value="all" /><br />
+        {SPLIT}
+        <label for="type2">{LANG[custom]}:</label>
+        <input type="radio" name="type" id="type2" value="custom" checked="checked" /><br />
+        <label for="rights"></label>
+        <select multiple="multiple" name="rights[]" id="rights" size="{SIZE}">
+            {SPLIT}
+            <optgroup label="{MODUL}">
+                {OPTIONS}
+            </optgroup>
+            {SPLIT}
+        </select><br />
+        <div class="button_container">
+            <input type="submit" name="submit" class="submit" value="{LANG[submit]}" />
+            <input type="reset" name="reset" class="submit" value="{LANG[reset]}" />
+            <input type="hidden" name="post" value="sent" />
+        </div>
+    </fieldset>
+</form>

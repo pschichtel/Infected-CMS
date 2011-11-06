@@ -1,0 +1,19 @@
+<h1>{LANG[admins]} - {LANG[management]}</h1>
+<div id="msg">{STATUS}</div>
+<form action="{THIS}" method="post" accept-charset="utf-8">
+    <fieldset>
+        <legend>{LANG[new]}</legend>
+        <label for="name">{LANG[name]}:</label>
+        <input type="text" name="name" id="name" value="{NAME}" /><br />
+        <label for="pass">{LANG[password]}:</label>
+        <input type="password" name="pass" id="pass" value="" /><br />
+        <label for="repass" style="text-transform:capitalize;">{LANG[retyp]}:</label>
+        <input type="password" name="repass" id="repass" value="" /><br />
+        {ADMINGROUP}
+        <div class="button_container">
+            <input type="submit" name="submit" class="submit" value="{LANG[submit]}" />
+            <input type="reset" name="reset" class="submit" value="{LANG[reset]}" />
+            <input type="hidden" name="post" value="sent" />
+        </div>
+    </fieldset>
+</form>

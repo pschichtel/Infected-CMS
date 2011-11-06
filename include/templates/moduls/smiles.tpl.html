@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>{TITLE}</title>
+        <meta http-equiv="Content-type" content="application/xhtml+xml;charset=UTF-8" />
+        <link rel="shortcut icon" type="image/x-icon" href="{DESIGN-DIR}/images/favicon.ico" />
+    </head>
+    <body>
+    <div>
+        <script type="text/javascript">
+            //<![CDATA[
+            function writeSmile(smile)
+            {
+                var input = opener.window.document.getElementById('{TEXTAREA}');
+                input.value += ' ' + smile + ' ';
+                input.focus();
+            }
+            //]]>
+        </script>
+        {SPLIT}
+        <img src="include/images/smiles/{FILE}" onclick="writeSmile('{SMILE}');" alt="{SMILE}" title="{SMILE}" />
+        {SPLIT}
+    </div>
+    </body>
+</html>

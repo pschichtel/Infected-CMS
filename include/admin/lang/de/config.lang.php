@@ -1,0 +1,30 @@
+<?php
+$lang = array(
+    'config'                        => 'Konfiguration',
+    'cfg_cms_std_design'            => 'Das Standarddesign',
+    'cfg_cms_std_lang'              => 'Die Standardsprache',
+    'cfg_cms_std_modul'             => 'Das Standardmodul',
+    'cfg_cms_title'                 => 'Der Titel des CMS',
+    'cfg_cms_captcha_length'        => 'Die Länge des Captchas',
+    'cfg_contact_lock'              => 'Mail-Sperre (in Sekunden)',
+    'cfg_contact_textlen'           => 'Maximallänge der Nachtichten',
+    'cfg_gbook_email_subject'       => 'Standardbetreff der Email',
+    'cfg_gbook_lock'                => 'Eintrags-Sperre (in Sekunden)',
+    'cfg_gbook_pps'                 => 'Einträge pro Seite',
+    'cfg_gbook_textlen'             => 'Maximallänge der Einträge',
+    'cfg_news_pps'                  => 'News pro Seite',
+    'cfg_partners_pps'              => 'Partner pro Seite',
+    'cfg_txt_split_index'           => 'Maximale länge der Wörter',
+    'cfg_seo_uri_rewrite'           => 'Mod_Rewrite benutzen?',
+    'cfg_news_cps'                  => 'Kommentare pro Seite',
+    'cfg_news_commentlength'        => 'Maximallänge eines Kommentar',
+    'cfg_news_shortenedlen'         => 'Länger der gekürzten News',
+    'Yes'                           => 'Ja',
+    'No'                            => 'Nein',
+    'submit'                        => 'Abschicken',
+    'reset'                         => 'Zurücksetzen',
+    'changed'                       => 'Konfiguration erfolgreich gespeichert!',
+    'error'                         => 'Speichern nicht möglich! Eine oder mehrere Angaben fehlen oder sind zu lang.',
+    'status_access_denied'          => 'Zugriff verweigert!'
+);
+?>

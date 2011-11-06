@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de">
+<head>
+    <title>{TITLE}</title>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="expire" content="0" />
+    <link rel="stylesheet" type="text/css" href="{DESIGN-DIR}/style/main.css" media="screen, print" />
+    <!--[if IE]>
+    <link rel="stylesheet" type="text/css" href="{DESIGN-DIR}/style/ie.css" media="screen, print" />
+    <![endif]-->
+    <link rel="shortcut icon" type="image/x-icon" href="{DESIGN-DIR}/images/favicon.ico" />
+    <script type="text/javascript" src="include/includes/javascripts/commonlib.js"></script>
+    <script type="text/javascript" src="include/includes/javascripts/link-handler.js"></script>
+    <script type="text/javascript">
+    //<![CDATA[
+        function init()
+        {
+            externalA_bindEvents('external');
+        }
+        bindEvent(window, 'load', init);
+    //]]>
+    </script>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1><a href="{INDEXLINK}" style="text-decoration:none;color:white;">Code<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Infection</a> </h1>
+        </div>
+        <div id="content">
+            <h1>{CTITLE}</h1>
+            {CONTENT}
+        </div>
+        <div id="navi">
+            <h1>Navigation</h1>
+            {MENU[1]}
+            {MENU[2]}
+        </div>
+        <div id="footer">
+            Copyright © 2009-2010 by Code Infection<br />
+            <a class="external" href="admin.php?modul=login">Admincenter</a><br />
+            Diese Seite ist <a class="external" href="http://validator.w3.org/check?uri=referer">XHTML 1.1</a>
+            und <a class="external" href="http://jigsaw.w3.org/css-validator/check/referer/?profile=css3">CSS 3</a> konform!<br />
+            Sie befinden sich auf: <a href="{PAGELINK}">{PAGELINK}</a>
+        </div>
+    </div>
+</body>
+</html>

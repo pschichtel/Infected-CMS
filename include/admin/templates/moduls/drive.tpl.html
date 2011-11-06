@@ -1,0 +1,28 @@
+<h1>{LANG[drive]} - {LANG[management]}</h1>
+<div id="msg">{MSG}</div>
+<form action="{THIS}" method="post" accept-charset="utf-8">
+    <fieldset>
+        <legend>{LANG[legend]}</legend>
+        <label for="key">{LANG[key]}:</label>
+        <input type="text" name="key" id="key" value="{KEY}" /><br />
+        <label for="lang">{LANG[lang]}:</label>
+        <input type="text" name="lang" id="lang" value="{LANG}" /><br />
+        <label for="zoom">{LANG[zoom]}:</label>
+        <input type="text" name="zoom" id="zoom" value="{ZOOM}" /><br />
+        <label for="posl">{LANG[posl]}:</label>
+        <input type="text" name="posl" id="posl" value="{POSL}" /><br />
+        <label for="posb">{LANG[posb]}:</label>
+        <input type="text" name="posb" id="posb" value="{POSB}" /><br />
+        <label for="type">{LANG[type]}:</label>
+        <select name="type" id="type">
+            {OPTIONS}
+        </select><br />
+        <label for="markertext">{LANG[markertext]}:</label>
+        <textarea name="markertext" id="markertext" cols="40" rows="6">{MARKERTEXT}</textarea><br />
+        <div class="button_container">
+            <input type="submit" name="submit" class="submit" value="{LANG[submit]}" />
+            <input type="reset" name="reset" class="submit" value="{LANG[reset]}" />
+            <input type="hidden" name="edit" value="sent" />
+        </div>
+    </fieldset>
+</form>

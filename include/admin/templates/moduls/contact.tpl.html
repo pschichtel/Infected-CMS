@@ -1,0 +1,32 @@
+<h1>{LANG[contact]} - {LANG[management]}</h1>
+<div id="msg">{MSG}</div>
+<div style="width:600px;margin:5px auto;">
+    <a href="{THIS}&amp;add=new" class="speciallink">{LANG[new]}</a><br />
+    <a href="{THIS}&amp;delpage={DELINDEX}" class="speciallink">{LANG[delete_page]}</a><br />
+    <a href="{THIS}&amp;delall=true" class="speciallink">{LANG[delete_all]}</a><br />
+</div>
+<table>
+<tr>
+    <th>{LANG[name]}</th>
+    <th>{LANG[email]}</th>
+    <th>{LANG[edit_tbl]}</th>
+    <th>{LANG[delete]}</th>
+</tr>
+{SPLIT}
+<tr class="{STYLE}">
+    <td><span title="{FULLNAME}">{NAME}</span></td>
+    <td><span title="{FULLEMAIL}">{EMAIL}</span></td>
+    <td style="text-align:center;"><a href="{THIS}&amp;edit={ID}&amp;page={PAGE}"><img src="include/admin/images/edit.png" alt="{LANG[edit_tbl]}" /></a></td>
+    <td style="text-align:center;"><a href="{THIS}&amp;del={ID}"><img src="include/admin/images/del.png" alt="{LANG[delete]}" /></a></td>
+</tr>
+{SPLIT}
+</table>
+<div style="width:600px;margin:0 auto;">
+    <table cellpadding="0" cellspacing="0" id="sub_navi">
+        <tr>
+            <td id="back">{PAGE-B}</td>
+            <td>{LANG[page]} {PAGE} {LANG[of]} {PAGES-C}</td>
+            <td id="forward">{PAGE-F}</td>
+        </tr>
+    </table>
+</div>

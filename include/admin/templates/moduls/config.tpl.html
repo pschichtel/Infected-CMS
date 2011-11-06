@@ -1,0 +1,17 @@
+<h1>{LANG[config]}</h1>
+<div>
+    <div id="msg">{MSG}</div>
+    <form action="{THIS}" method="post" accept-charset="utf-8">
+        {SPLIT}
+        <fieldset>
+            <legend>{MODUL-NAME}-{LANG[config]}</legend>
+            {INPUTS}
+        </fieldset>
+        {SPLIT}
+        <div class="button_container">
+            <input type="submit" name="submit" class="submit" value="{LANG[submit]}" />
+            <input type="reset" name="reset" class="submit" value="{LANG[reset]}" />
+            <input type="hidden" name="edit" value="sent" />
+        </div>
+    </form>
+</div>

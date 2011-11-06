@@ -1,0 +1,13 @@
+<form action="{THIS}" method="post" accept-charset="utf-8">
+    <fieldset>
+        <legend>{LEGEND}</legend>
+        <label style="width:30px;text-align:right;" for="radio1">{LANG[Yes]}</label>
+        <input style="width:10px;" type="radio" name="confirm" id="radio1" value="yes" /><br />
+        <label style="width:30px;text-align:right;" for="radio2">{LANG[No]}</label>
+        <input style="width:10px;" type="radio" name="confirm" id="radio2" value="no" checked="checked" /><br />
+        <div class="button_container">
+            <input type="submit" name="submit" class="submit" value="{LANG[submit]}" />
+            <input type="hidden" name="confirmation" value="sent"/>
+        </div>
+    </fieldset>
+</form>

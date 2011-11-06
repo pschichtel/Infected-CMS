@@ -1,0 +1,341 @@
+/*
+ *---------------- Layout ------------------
+ */
+body, html, #navi, #container, #content, #footer {
+    margin:0;
+    padding:0;
+    color: #e6b873;
+}
+body {
+    font: 100.01% arial, serif;
+    background-color: #e6dccf;
+    background-color: silver;
+    text-align: center;
+}
+#container {
+    width: 800px;
+    text-align: left;
+    margin: 5mm auto;
+    background-image: url('../images/container-bg.jpg');
+    color: #e6b873;
+}
+#header {
+    background-color: #3054bf;
+    color: #e6dccf;
+    padding: 20px;
+    padding-left: 80px;
+}
+#navi {
+    width: 200px;
+    float: left;
+    color: #3054bf;
+}
+#content {
+    float: right;
+    width: 570px;
+    color: #806640;
+    padding: 15px;
+    min-height: 350px;
+    overflow: auto;
+}
+#footer {
+    font-size: 0.7em;
+    background-color: #3054bf;
+    color: #e6dccf;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+}
+#footer a img {
+    display: none;
+}
+/*
+ *---------------- Navigation + Menüs ------------------
+ */
+#navi h1 {
+    margin: 0 25px;
+    padding: 25px 0;
+    font-size: 1.3em;
+}
+.menu_box {
+    background-image: url('/images/redtrans.png');
+    margin: 10px 5px;
+    margin-left: 0;
+    padding: 2px;
+    padding-left: 4px;
+    border: 1px solid silver;
+    border-left-width: 0;
+    -moz-border-radius-topright: 8px;
+    -moz-border-radius-bottomright: 8px;
+}
+.box_header {
+    font-weight: bolder;
+}
+.menu_list {
+    list-style-type: none;
+    margin: 3px;
+    margin-left: 0;
+    padding-left: 15px;
+}
+.menu_list .menu_list {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.menu_list a {
+    display: block;
+}
+.menu_list a .externalIndicater {
+    display: none;
+}
+.menu_list a:hover, .menu_list a:focus, #menu_current {
+    background-color: #3054bf;
+    color: #e6b873;
+}
+/*
+ *---------------- Unternavigation ----------------
+ */
+#sub_navi {
+    margin: 20px 0 0 0;
+    text-align: center;
+    font-size: 0.9em;
+    width: 100%;
+}
+#sub_navi a {
+    color: #806640;
+}
+#sub_navi #back {
+    width: 23%;
+    float: left;
+    text-align: left;
+}
+#sub_navi #forward {
+    width: 23%;
+    float: right;
+    text-align: right;
+}
+/*
+ *---------------- Footer------------------
+ */
+#footer a {
+    color: #e6b873;
+}
+/*
+ *---------------- News + Gästebuch Boxen------------------
+ */
+.news_box, .gbook_box {
+    background-color: rgb(250,250,220);
+    border: 1px solid #30546a;
+    padding: 2px;
+    margin-bottom: 10px;
+    color: #806640;
+}
+.news_header, .gbook_header {
+    border-bottom: 1px solid #3054bf;
+    padding: 0 0 1px 4px;
+    margin: 0 -2px;
+    font-weight: bolder;
+}
+.news_body, .gbook_body {
+    padding: 5px;
+}
+.news_footer, .gbook_footer {
+    border-top: 1px solid #3054bf;
+    padding:  0 1px 0 4px;
+    margin: 0 -2px;
+}
+
+.news_header a {
+    color: #806640 !important;
+    text-decoration: none;
+}
+.news_comment {
+    margin-top: 10px;
+    background-color: rgb(250,250,220);
+    border: 1px solid #30546a;
+    color: #806640;
+}
+.news_comment_body {
+    padding: 3px;
+}
+.news_comment_head {
+    padding: 2px;
+    padding-bottom: 0;
+    border-bottom: 1px solid #3054bf;
+}
+.news_comment_foot {
+    padding: 2px;
+    padding-top: 0;
+    border-top: 1px solid #3054bf;
+}
+
+
+/*
+ *---------------- Gästebuch ------------------
+ */
+#gbook_entry_box {
+    margin-bottom: 20px;
+}
+#gbook_entry_box fieldset {
+    border: 1px solid silver;
+    margin: 0;
+}
+/*
+ *---------------- Partner ------------------
+ */
+.partners_box {
+    max-height: 150px;
+    background-color: rgb(250,250,220);
+    border: 1px solid #30546a;
+    padding: 2px;
+    margin-bottom: 10px;
+    overflow: auto;
+}
+.partners_box a {
+    display: block;
+    text-align: center;
+}
+.partners_box img {
+    border: 0;
+}
+.partners_box .externalIndicater {
+    display: none;
+}
+/*
+ *---------------- Impressum ------------------
+ */
+#imprint {
+    border: 1px solid rgb(250,250,220);
+    margin-bottom: 15px;
+}
+#liabilty {
+    height: 400px;
+    overflow: scroll;
+    border: 1px solid #3054bf;
+    background-color: rgb(250,250,220);
+    padding: 5px;
+}
+#liabilty h4 {
+    text-align: center;
+}
+/*
+ *---------------- Banner ------------------
+ */
+
+
+/*
+ *---------------- Allgemeiner Style ------------------
+ */
+a, a:active, a:visited, a:hover, a:focus {
+    color: #3054bf;
+    text-decoration: none;
+}
+p {
+    margin: 25px 25px 0 25px;
+}
+#msg {
+    color: red;
+    margin-bottom: 10px;
+}
+fieldset label {
+    width: 160px;
+    float: left;
+    text-align: right;
+}
+fieldset br {
+    clear: left;
+}
+fieldset hr {
+    border: 1px ridge silver;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+fieldset input, fieldset textarea, fieldset select {
+    width: 300px;
+    margin-left: 10px;
+    font-family: arial, serif;
+    font-size: 0.95em;
+}
+fieldset select {
+    width: 306px;
+}
+.submit {
+    margin-top: 8px;
+    display: block;
+    width: 100px;
+    border: 1px solid #e6b873;
+    margin-left: auto;
+    margin-right: auto;
+}
+#content h1 {
+    margin: 0 25px;
+    padding: 12px 0 25px 0;
+    font-size: 1.3em;
+}
+#google_map {
+    height: 450px;
+}
+.smiles {
+    vertical-align: bottom;
+    border: 0;
+}
+.pics {
+    border: 0;
+}
+.externalIndicater {
+    vertical-align: baseline;
+    width: 12px;
+    height: 12px;
+}
+#bbcode_container button {
+    border: 1px solid #E6B873;
+}
+.spoiler {
+    border: 1px solid black;
+    background-color: #ffd792;
+    padding: 3px;
+}
+.spoiler_link {
+    color: blue;
+    outline: 0;
+}
+.code {
+    border: 1px solid black;
+}
+.code h4 {
+    margin: 4px;
+    color: black;
+}
+.code pre {
+    background-color: silver;
+    padding: 3px;
+    padding-left: 0;
+    max-height: 400px;
+    overflow: auto;
+}
+.code span.line {
+    height: 100%;
+    display: inline-block;
+    width: 45px;
+    margin-right: 3px;
+    text-align: right;
+    border-right: 1px solid black;
+    background-color: gray;
+    color: white;
+}
+.quote {
+    margin: 10px;
+    padding-left: 20px;
+    background-image: url('../images/quote.png');
+    background-repeat: no-repeat;
+}
+.quote_content, .quote_author {
+    padding: 4px;
+    border-left: 2px solid silver;
+}
+.quote_content {
+    font-family: 'times new roman';
+}
+.quote_author {
+    padding-top: 0;
+    color: silver;
+}

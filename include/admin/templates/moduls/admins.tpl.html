@@ -1,0 +1,21 @@
+<h1>{LANG[admins]} - {LANG[management]}</h1>
+<div id="msg">{STATUS}</div>
+<div style="width:600px;margin:5px auto;">
+    <a href="{THIS}&amp;add=new" class="speciallink">{LANG[new]}</a><br />
+</div>
+<table>
+    <tr>
+        <th>{LANG[name]}</th>
+        <th>{LANG[group]}</th>
+        <th>{LANG[edit]}</th>
+        <th>{LANG[delete]}</th>
+    </tr>
+    {SPLIT}
+    <tr class="{STYLE}">
+        <td>{NAME}</td>
+        <td>{GROUP}</td>
+        <td style="text-align:center;"><a href="{THIS}&amp;edit={ID}"><img src="include/admin/images/edit.png" alt="{LANG[edit]}" /></a></td>
+        <td style="text-align:center;"><a href="{THIS}&amp;del={ID}"><img src="include/admin/images/del.png" alt="{LANG[delete]}" /></a></td>
+    </tr>
+    {SPLIT}
+</table>

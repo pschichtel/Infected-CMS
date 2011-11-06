@@ -1,0 +1,32 @@
+<?php
+$lang = array(
+    'admins'                        => 'Administrators',
+    'management'                    => 'Management',
+    'retyp'                         => 'Repeat',
+    'new_password'                  => 'New Password',
+    'old_password'                  => 'Old Password',
+    'password'                      => 'Password',
+    'submit'                        => 'Submit',
+    'reset'                         => 'Reset',
+    'Yes'                           => 'Yes',
+    'No'                            => 'No',
+    'delete'                        => 'Delete',
+    'edit'                          => 'Edit',
+    'group'                         => 'Administratorgroup',
+    'name'                          => 'Name',
+    'new'                           => 'Add a new administrator',
+    'sure2delete'                   => 'Are you sure to delete this administrator?',
+    'status_added'                  => 'Administrator successfully added!',
+    'status_deleted'                => 'Administrator successfully deleted!',
+    'status_updated'                => 'Administrator successfully edited!',
+    'status_wrong_password'         => 'Enter the correct password!',
+    'status_access_denied'          => 'Access denied!',
+    'err'                           => 'The following errors occurrered',
+    'err_name_missing'              => 'The name is missing!',
+    'err_name_in_use'               => 'The name is already in use!',
+    'err_forbidden_chars'           => 'The name contains forbidden characters! Allowed: Letters, Numbers, "_" and "-"',
+    'err_pwds_not_equal'            => 'The passwords do not match!',
+    'err_pwd_too_short'             => 'The password is too short! Minimum length: %0%',
+    'err_wrong_pwd'                 => 'Enter the correct password!'
+);
+?>

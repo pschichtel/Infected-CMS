@@ -1,0 +1,57 @@
+<h1>{LANG[navi]} - {LANG[management]}</h1>
+<div id="msg">{STATUS}</div>
+<div id="navi_add">
+    <form action="{THIS}&amp;add=new" method="post" accept-charset="utf-8">
+        <select name="type">
+            <option value="1">{LANG[menu]}</option>
+            <option value="2">{LANG[modul]}</option>
+            <option value="3">{LANG[self]}</option>
+            <option value="4">{LANG[box]}</option>
+            <option value="5">{LANG[link]}</option>
+        </select>
+        <input type="submit" name="submit" class="submit" value="{LANG[add]}" />
+    </form>
+</div>
+<div id="navi_menubutton_container">
+    <a href="admin.php?modul=navi&amp;menuid=1" class="navi_menubutton speciallink">{LANG[menu]} 1</a>
+    <a href="admin.php?modul=navi&amp;menuid=2" class="navi_menubutton speciallink">{LANG[menu]} 2</a>
+    <a href="admin.php?modul=navi&amp;menuid=3" class="navi_menubutton speciallink">{LANG[menu]} 3</a>
+    <a href="admin.php?modul=navi&amp;menuid=4" class="navi_menubutton speciallink">{LANG[menu]} 4</a>
+    <a href="admin.php?modul=navi&amp;menuid=5" class="navi_menubutton speciallink">{LANG[menu]} 5</a>
+</div>
+<table>
+    <tr>
+        <th>{LANG[pos]}:</th>
+        <th>{LANG[name]}:</th>
+        <th>{LANG[addr]}:</th>
+        <th>{LANG[level]}:</th>
+        <th>{LANG[visible]}:</th>
+        <th>{LANG[extern]}:</th>
+        <th><img src="include/admin/images/edit.png" alt="{LANG[fulledit]}" title="{LANG[fulledit]}" /></th>
+        <th><img src="include/admin/images/edit_visible.png" alt="{LANG[edit_visible]}" title="{LANG[edit_visible]}" /></th>
+        <th><img src="include/admin/images/edit_extern.png" alt="{LANG[edit_extern]}" title="{LANG[edit_extern]}" /></th>
+        <th><img src="include/admin/images/pos_up.png" alt="{LANG[pos_up]}" title="{LANG[pos_up]}" /></th>
+        <th><img src="include/admin/images/pos_down.png" alt="{LANG[pos_down]}" title="{LANG[pos_down]}" /></th>
+        <th><img src="include/admin/images/level_down.png" alt="{LANG[level_down]}" title="{LANG[level_down]}" /></th>
+        <th><img src="include/admin/images/level_up.png" alt="{LANG[level_up]}" title="{LANG[level_up]}" /></th>
+        <th><img src="include/admin/images/del.png" alt="{LANG[del]}" title="{LANG[del]}" /></th>
+    </tr>
+    {SPLIT}
+    <tr class="{STYLE}">
+        <td>{POS}</td>
+        <td>{NAME}</td>
+        <td>{ADDR}</td>
+        <td style="text-align:center;">{LEVEL}</td>
+        <td>{VISIBLE}</td>
+        <td>{EXTERN}</td>
+        <td><a href="{THIS}&amp;edit=full&amp;id={ID}&amp;menuid={MENUID}"><img src="include/admin/images/edit.png" alt="{LANG[fulledit]}" title="{LANG[fulledit]}" /></a></td>
+        <td><a href="{THIS}&amp;edit=visible&amp;id={ID}&amp;menuid={MENUID}"><img src="include/admin/images/edit_visible.png" alt="{LANG[edit_visible]}" title="{LANG[edit_visible]}" /></a></td>
+        <td><a href="{THIS}&amp;edit=extern&amp;id={ID}&amp;menuid={MENUID}"><img src="include/admin/images/edit_extern.png" alt="{LANG[edit_extern]}" title="{LANG[edit_extern]}" /></a></td>
+        <td><a href="{THIS}&amp;edit=pos_up&amp;id={ID}&amp;pos={POS}&amp;menuid={MENUID}"><img src="include/admin/images/pos_up.png" alt="{LANG[pos_up]}" title="{LANG[pos_up]}" /></a></td>
+        <td><a href="{THIS}&amp;edit=pos_down&amp;id={ID}&amp;pos={POS}&amp;menuid={MENUID}"><img src="include/admin/images/pos_down.png" alt="{LANG[pos_down]}" title="{LANG[pos_down]}" /></a></td>
+        <td><a href="{THIS}&amp;edit=level_down&amp;id={ID}&amp;pos={POS}&amp;menuid={MENUID}"><img src="include/admin/images/level_down.png" alt="{LANG[level_down]}" title="{LANG[level_down]}" /></a></td>
+        <td><a href="{THIS}&amp;edit=level_up&amp;id={ID}&amp;pos={POS}&amp;menuid={MENUID}"><img src="include/admin/images/level_up.png" alt="{LANG[level_up]}" title="{LANG[level_up]}" /></a></td>
+        <td><a href="{THIS}&amp;del={ID}&amp;menuid={MENUID}"><img src="include/admin/images/del.png" alt="{LANG[del]}" title="{LANG[del]}" /></a></td>
+    </tr>
+    {SPLIT}
+</table>

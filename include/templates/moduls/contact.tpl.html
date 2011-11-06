@@ -1,0 +1,26 @@
+<div id="msg">{MSG}</div>
+<div>
+    <form action="{THIS}" method="post" accept-charset="utf-8">
+    <fieldset>
+        <legend>{LANG[new_mail]}</legend>
+        <label for="email">{LANG[author_email]}:*</label>
+        <input type="text" name="email" id="email" value="{EMAIL}" /><br />
+        <label for="target">{LANG[target]}:*</label>
+        <select name="target" id="target">
+            <option value="" selected="selected">--- {LANG[please_select]} ---</option>
+            {SPLIT}
+            <option value="{TARGET}">{NAME}</option>
+            {SPLIT}
+        </select><br />
+        <label for="ref">{LANG[subject]}:*</label>
+        <input type="text" name="ref" id="ref" value="{REF}" /><br />
+        <label for="text">{LANG[text]}:*</label>
+        <textarea name="text" id="text" rows="4" cols="15">{TEXT}</textarea><br /><br />
+        <label style="padding-right:20px;">{LANG[captcha]}:*</label>
+        <img src="include/images/captcha.php" style="border:0;" alt="{LANG[captcha]}" />
+        <input type="text" id="captcha" name="captcha" value="" style="width:80px;vertical-align:super;" /><br />
+        <input type="hidden" name="post" id="post" value="sent" />
+        <input type="submit" name="submit" class="submit" value="{LANG[submit]}"/>
+    </fieldset>
+    </form>
+</div>

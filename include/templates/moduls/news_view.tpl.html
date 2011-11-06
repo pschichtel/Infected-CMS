@@ -1,0 +1,82 @@
+<div class="news_box" style="margin-bottom:25px;">
+    <div class="news_header">{TITLE}</div>
+    <div class="news_body">
+    {TEXT}
+    </div>
+    <div class="news_footer">{SIGNATURE}</div>
+</div>
+<h3 style="padding-left:20px;padding-top:10px;">{LANG[comments]}:</h3>
+<div id="news_comment-countainer">
+    {SPLIT}
+    <a name="comments"></a>
+    <div id="msg">{STATUS}</div>
+    <div id="news_new_comment">
+        <form action="{ADD_ADDR}#comments" method="post" accept-charset="UTF-8">
+        <fieldset>
+            <legend>{LANG[new_comment]}</legend>
+            <label for="c_author">{LANG[comment_author]}</label>
+            <input type="text" name="c_author" id="c_author" value="{AUTHOR}" /><br />
+            <div id="bbcode_container">
+                <script type="text/javascript" src="./?helper=jstranslate&amp;params=file-bbcode.lang-bbcode"></script>
+                <div style="text-align:right;" onclick="showHideElem(this.parentNode.getElementsByTagName('div')[1]);return false;"><a href="#" onclick="return false;">{LANG[bbcode_help_ui]}</a></div>
+                <div style="display:none;">
+                    <button type="button" onclick="insertBBCode('c_text', 'b', null);"><span style="font-weight:bold;">B</span></button>
+                    <button type="button" onclick="insertBBCode('c_text', 'u', null);"><span style="text-decoration:underline;">U</span></button>
+                    <button type="button" onclick="insertBBCode('c_text', 'i', null);"><span style="font-style:italic">i</span></button>
+                    <button type="button" onclick="insertURLBBCode('c_text');"><span style="color:blue;text-decoration:underline;">URL</span></button>
+                    <button type="button" onclick="insertBBCode('c_text', 'email', null);"><span style="color:blue;text-decoration:underline;">Email</span></button>
+                    <button type="button" onclick="insertBBCode('c_text', 'search', null);"><span style="color:blue;text-decoration:underline;">Suche</span></button>
+                    <button type="button" onclick="insertImgBBCode('c_text');">IMG</button>
+                    <button type="button" onclick="insertSizeBBCode('c_text');">S<span style="font-size:50%">IZE</span></button>
+                    <button type="button" onclick="insertColorBBCode('c_text');"><span style="color:red;">Color</span></button>
+                    <button type="button" onclick="insertFontBBCode('c_text');"><span style="font-family:'comic sans ms';">Font</span></button>
+                    <button type="button" onclick="insertQuoteBBCode('c_text');"><span style="font-family:'Times New Roman';">Quote</span></button>
+                    <button type="button" onclick="insertBBCode('c_text', 'center', null);">Center</button>
+                    <button type="button" onclick="insertBBCode('c_text', 'right', null);">Right</button>
+                    <button type="button" onclick="insertBBCode('c_text', 'justify', null);">Justify</button>
+                    <button type="button" onclick="insertBBCode('c_text', 'pre', null);">PRE</button>
+                    <button type="button" onclick="insertCodeBBCode('c_text');">&lt;CODE&gt;</button>
+                    <button type="button" onclick="insertListBBCode('c_text');">Liste</button>
+                    <button type="button" onclick="insertVideoBBCode('c_text');">Video</button>
+                    <button type="button" onclick="insertBBCode('c_text', 'sub', null);"><span>Sub</span></button>
+                    <button type="button" onclick="insertBBCode('c_text', 'sup', null);"><span>Super</span></button>
+                    <button type="button" onclick="insertSingleBBCode('c_text', 'line', null);"><span style="">Line</span></button>
+                    <button type="button" onclick="insertSingleBBCode('c_text', 'copyright', null);"><span style="">©</span></button>
+                    <button type="button" onclick="insertSingleBBCode('c_text', 'registered', null);"><span style="">®</span></button>
+                    <button type="button" onclick="insertSingleBBCode('c_text', 'tm', null);"><span style="">™</span></button>
+                    <button type="button" onclick="insertSingleBBCode('c_text', 'bull', null);"><span style="">•</span></button>
+                    <button type="button" onclick="insertBBCode('c_text', 'lt', null);"><span style="text-decoration:line-through;">Lt</span></button>
+                    <button type="button" onclick="openSmileWindow('c_text');"><span>Smiles</span></button>
+                    <br style="clear:left;" />
+                </div>
+            </div>
+            <label for="c_text">{LANG[comment_text]}</label>
+            <textarea name="c_text" id="c_text" rows="4" cols="15">{TEXT}</textarea><br />
+            <label style="padding-right:20px;">{LANG[captcha]}:*</label>
+            <img src="include/images/captcha.php" style="border:0;" alt="{LANG[captcha]}" />
+            <input type="text" id="captcha" name="captcha" value="" style="width:80px;vertical-align:super;" /><br />
+            <input type="hidden" name="post" id="post" value="sent" />
+            <input type="submit" name="submit" class="submit" value="{LANG[submit]}"/>
+        </fieldset>
+        </form>
+    </div>
+    {SPLIT}
+    <div class="news_comment">
+        <div class="news_comment_head">{AUTHOR} - <a href="{QUOTE_ADDR}#comments">{LANG[quote]}</a></div>
+        <div class="news_comment_body">{TEXT}</div>
+        <div class="news_comment_foot">{DATE}</div>
+    </div>
+    {SPLIT}
+    <table cellpadding="0" cellspacing="0" id="sub_navi">
+        <tr>
+            <td id="back">{PAGE-B}</td>
+            <td>{LANG[page]} {PAGE} {LANG[of]} {PAGES-C}</td>
+            <td id="forward">{PAGE-F}</td>
+        </tr>
+    </table>
+    {SPLIT}
+    <div>
+        <span>{LANG[no_comments]}</span>
+    </div>
+    {SPLIT}
+</div>

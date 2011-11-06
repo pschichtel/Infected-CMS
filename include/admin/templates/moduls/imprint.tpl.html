@@ -1,0 +1,85 @@
+<h1>{LANG[imprint]} - {LANG[management]}</h1>
+<div id="msg">{MSG}</div>
+<form action="{THIS}" method="post" accept-charset="utf-8">
+    <fieldset>
+        <legend>{LANG[legend]}</legend>
+        <p>{LANG[imprint_title]}:</p>
+        <div id="bbcode_container">
+            <script type="text/javascript" src="include/includes/javascripts/bbcode.js"></script>
+            <div style="text-align:right;" onclick="showHideElem(this.parentNode.getElementsByTagName('div')[1]);return false;"><a href="#" onclick="return false;">{LANG[bbcode_help_ui]}</a></div>
+            <div style="display:none;">
+                <button type="button" onclick="insertBBCode('imprint', 'b', null);"><span style="font-weight:bold;">B</span></button>
+                <button type="button" onclick="insertBBCode('imprint', 'u', null);"><span style="text-decoration:underline;">U</span></button>
+                <button type="button" onclick="insertBBCode('imprint', 'i', null);"><span style="font-style:italic">i</span></button>
+                <button type="button" onclick="insertURLBBCode('imprint');"><span style="color:blue;text-decoration:underline;">URL</span></button>
+                <button type="button" onclick="insertBBCode('imprint', 'email', null);"><span style="color:blue;text-decoration:underline;">Email</span></button>
+                <button type="button" onclick="insertBBCode('imprint', 'search', null);"><span style="color:blue;text-decoration:underline;">Suche</span></button>
+                <button type="button" onclick="insertImgBBCode('imprint');">IMG</button>
+                <button type="button" onclick="insertSizeBBCode('imprint');">S<span style="font-size:50%">IZE</span></button>
+                <button type="button" onclick="insertColorBBCode('imprint');"><span style="color:red;">Color</span></button>
+                <button type="button" onclick="insertFontBBCode('imprint');"><span style="font-family:'comic sans ms';">Font</span></button>
+                <button type="button" onclick="insertQuoteBBCode('imprint');"><span style="font-family:'Times New Roman';">Quote</span></button>
+                <button type="button" onclick="insertBBCode('imprint', 'center', null);">Center</button>
+                <button type="button" onclick="insertBBCode('imprint', 'right', null);">Right</button>
+                <button type="button" onclick="insertBBCode('imprint', 'justify', null);">Justify</button>
+                <button type="button" onclick="insertBBCode('imprint', 'pre', null);">PRE</button>
+                <button type="button" onclick="insertCodeBBCode('imprint');">&lt;CODE&gt;</button>
+                <button type="button" onclick="insertListBBCode('imprint');">Liste</button>
+                <button type="button" onclick="insertVideoBBCode('imprint');">Video</button>
+                <button type="button" onclick="insertBBCode('imprint', 'sub', null);"><span>Sub</span></button>
+                <button type="button" onclick="insertBBCode('imprint', 'sup', null);"><span>Super</span></button>
+                <button type="button" onclick="insertSingleBBCode('imprint', 'line', null);"><span style="">Line</span></button>
+                <button type="button" onclick="insertSingleBBCode('imprint', 'copyright', null);"><span style="">©</span></button>
+                <button type="button" onclick="insertSingleBBCode('imprint', 'registered', null);"><span style="">®</span></button>
+                <button type="button" onclick="insertSingleBBCode('imprint', 'tm', null);"><span style="">™</span></button>
+                <button type="button" onclick="insertSingleBBCode('imprint', 'bull', null);"><span style="">•</span></button>
+                <button type="button" onclick="insertBBCode('imprint', 'lt', null);"><span style="text-decoration:line-through;">Lt</span></button>
+                <button type="button" onclick="openSmileWindow('imprint');"><span>Smiles</span></button>
+                <br style="clear:left;" />
+            </div>
+        </div>
+        <textarea name="imprint" id="imprint" cols="160" rows="15">{IMPRINT}</textarea><br />
+        <br />
+        <p>{LANG[liability]}:</p>
+        <div id="bbcode_container">
+            <script type="text/javascript" src="include/includes/javascripts/bbcode.js"></script>
+            <div style="text-align:right;" onclick="showHideElem(this.parentNode.getElementsByTagName('div')[1]);return false;"><a href="#" onclick="return false;">{LANG[bbcode_help_ui]}</a></div>
+            <div style="display:none;">
+                <button type="button" onclick="insertBBCode('liability', 'b', null);"><span style="font-weight:bold;">B</span></button>
+                <button type="button" onclick="insertBBCode('liability', 'u', null);"><span style="text-decoration:underline;">U</span></button>
+                <button type="button" onclick="insertBBCode('liability', 'i', null);"><span style="font-style:italic">i</span></button>
+                <button type="button" onclick="insertURLBBCode('liability');"><span style="color:blue;text-decoration:underline;">URL</span></button>
+                <button type="button" onclick="insertBBCode('liability', 'email', null);"><span style="color:blue;text-decoration:underline;">Email</span></button>
+                <button type="button" onclick="insertBBCode('liability', 'search', null);"><span style="color:blue;text-decoration:underline;">Suche</span></button>
+                <button type="button" onclick="insertImgBBCode('liability');">IMG</button>
+                <button type="button" onclick="insertSizeBBCode('liability');">S<span style="font-size:50%">IZE</span></button>
+                <button type="button" onclick="insertColorBBCode('liability');"><span style="color:red;">Color</span></button>
+                <button type="button" onclick="insertFontBBCode('liability');"><span style="font-family:'comic sans ms';">Font</span></button>
+                <button type="button" onclick="insertQuoteBBCode('liability');"><span style="font-family:'Times New Roman';">Quote</span></button>
+                <button type="button" onclick="insertBBCode('liability', 'center', null);">Center</button>
+                <button type="button" onclick="insertBBCode('liability', 'right', null);">Right</button>
+                <button type="button" onclick="insertBBCode('liability', 'justify', null);">Justify</button>
+                <button type="button" onclick="insertBBCode('liability', 'pre', null);">PRE</button>
+                <button type="button" onclick="insertCodeBBCode('liability');">&lt;CODE&gt;</button>
+                <button type="button" onclick="insertListBBCode('liability');">Liste</button>
+                <button type="button" onclick="insertVideoBBCode('liability');">Video</button>
+                <button type="button" onclick="insertBBCode('liability', 'sub', null);"><span>Sub</span></button>
+                <button type="button" onclick="insertBBCode('liability', 'sup', null);"><span>Super</span></button>
+                <button type="button" onclick="insertSingleBBCode('liability', 'line', null);"><span style="">Line</span></button>
+                <button type="button" onclick="insertSingleBBCode('liability', 'copyright', null);"><span style="">©</span></button>
+                <button type="button" onclick="insertSingleBBCode('liability', 'registered', null);"><span style="">®</span></button>
+                <button type="button" onclick="insertSingleBBCode('liability', 'tm', null);"><span style="">™</span></button>
+                <button type="button" onclick="insertSingleBBCode('liability', 'bull', null);"><span style="">•</span></button>
+                <button type="button" onclick="insertBBCode('liability', 'lt', null);"><span style="text-decoration:line-through;">Lt</span></button>
+                <button type="button" onclick="openSmileWindow('liability');"><span>Smiles</span></button>
+                <br style="clear:left;" />
+            </div>
+        </div>
+        <textarea name="liability" id="liability" cols="100" rows="20">{LIABILITY}</textarea><br />
+        <div class="button_container">
+            <input type="submit" name="submit" class="submit" value="{LANG[submit]}" />
+            <input type="reset" name="reset" class="submit" value="{LANG[reset]}" />
+            <input type="hidden" name="edit" value="sent" />
+        </div>
+    </fieldset>
+</form>

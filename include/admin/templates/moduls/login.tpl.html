@@ -1,0 +1,19 @@
+<div>
+    <div id="msg">{MSG}</div>
+    <form action="{THIS}" method="post" accept-charset="utf-8">
+    <fieldset>
+        <legend>{LANG[login]}</legend>
+        <label for="name">{LANG[name]}:</label>
+        <input type="text" name="name" id="name" value="" /><br />
+        <label for="pass">{LANG[pass]}:</label>
+        <input type="password" name="pass" id="pass" value="" /><br />
+        <input type="hidden" name="post" id="post" value="sent" />
+        <div id="cookie_info">{LANG[cookies]}</div>
+        <hr />
+        <div class="button_container">
+            <input type="submit" name="submit" class="submit" value="{LANG[login]}" />
+            <input type="hidden" name="referer" value="{REFERER}" />
+        </div>
+    </fieldset>
+    </form>
+</div>

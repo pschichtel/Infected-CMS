@@ -1,0 +1,33 @@
+<?php
+$lang = array(
+    'drive'                     => 'Anfahrt',
+    'submit'                    => 'Abschicken',
+    'reset'                     => 'Zurücksetzen',
+    'management'            => 'Verwaltung',
+    'G_HYBRID_MAP'          => 'Gemichte Ansicht',
+    'G_NORMAL_MAP'          => 'Normal-Ansicht',
+    'G_SATELLITE_MAP'       => 'Satelliten-Ansicht',
+    'key'                   => 'Den Google-Maps-Api-Schlüssel',
+    'lang'                  => 'Die Sprache des Interface',
+    'legend'                => 'Konfiguration der Google-Map',
+    'markertext'            => 'Der Text des Markers',
+    'posb'                  => 'Die Position (Breite)',
+    'posl'                  => 'Die Position (Länge)',
+    'type'                  => 'Den Typ der Map',
+    'updated'               => 'Einstellungen aktualisiert!',
+    'zoom'                  => 'Den Standardzoom der Map',
+    'err'                   => 'Folgende Fehler sind aufgetreten',
+    'err_key'               => 'Der Goolge-Maps-API-Schlüssel fehlt',
+    'err_key2long'          => 'Der Goolge-Maps-API-Schlüssel ist zu lang',
+    'err_lang'              => 'Das Sprachkürzel fehlt',
+    'err_lang2long'         => 'Das Sprachkürzel ist zu lang',
+    'err_zoom'              => 'Der Zoom-Wert fehlt',
+    'err_zoom2long'         => 'Der Zoom-Wert ist zu lang',
+    'err_posl'              => 'Die Länge fehlt',
+    'err_posl2long'         => 'Der Längen-Wert ist zu lang',
+    'err_posb'              => 'Die Breite fehlt',
+    'err_posb2long'         => 'Der Breiten-Wert ist zu lang',
+    'err_markertext'        => 'Der text für den Marker fehlt',
+    'status_access_denied'  => 'Zugriff verweigert!'
+);
+?>

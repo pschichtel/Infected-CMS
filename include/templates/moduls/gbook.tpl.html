@@ -1,0 +1,65 @@
+<div id="msg">{MSG}</div>
+<div id="gbook_entry_box">
+    <form action="{THIS}" method="post" accept-charset="utf-8">
+    <fieldset>
+        <legend>Eintrag verfassen</legend>
+        <label for="author">{LANG[name]}:*</label>
+        <input type="text" name="author" id="author" value="{AUTHOR}" /><br />
+        <label for="email">{LANG[email]}:</label>
+        <input type="text" name="email" id="email" value="{EMAIL}" /><br />
+        <div id="bbcode_container">
+            <script type="text/javascript" src="./?helper=jstranslate&amp;params=file-bbcode.lang-bbcode"></script>
+            <div style="text-align:right;" onclick="showHideElem(this.parentNode.getElementsByTagName('div')[1]);return false;"><a href="#" onclick="return false;">{LANG[bbcode_help_ui]}</a></div>
+            <div style="display:none;">
+                <button type="button" onclick="insertBBCode('text', 'b', null);"><span style="font-weight:bold;">B</span></button>
+                <button type="button" onclick="insertBBCode('text', 'u', null);"><span style="text-decoration:underline;">U</span></button>
+                <button type="button" onclick="insertBBCode('text', 'i', null);"><span style="font-style:italic">i</span></button>
+                <button type="button" onclick="insertURLBBCode('text');"><span style="color:blue;text-decoration:underline;">URL</span></button>
+                <button type="button" onclick="insertBBCode('text', 'email', null);"><span style="color:blue;text-decoration:underline;">Email</span></button>
+                <button type="button" onclick="insertBBCode('text', 'search', null);"><span style="color:blue;text-decoration:underline;">Suche</span></button>
+                <button type="button" onclick="insertImgBBCode('text');">IMG</button>
+                <button type="button" onclick="insertSizeBBCode('text');">S<span style="font-size:50%">IZE</span></button>
+                <button type="button" onclick="insertColorBBCode('text');"><span style="color:red;">Color</span></button>
+                <button type="button" onclick="insertFontBBCode('text');"><span style="font-family:'comic sans ms';">Font</span></button>
+                <button type="button" onclick="insertBBCode('text', 'center', null);">Center</button>
+                <button type="button" onclick="insertBBCode('text', 'right', null);">Right</button>
+                <button type="button" onclick="insertBBCode('text', 'justify', null);">Justify</button>
+                <button type="button" onclick="insertBBCode('text', 'pre', null);">PRE</button>
+                <button type="button" onclick="insertBBCode('text', 'sub', null);"><span>Sub</span></button>
+                <button type="button" onclick="insertBBCode('text', 'sup', null);"><span>Super</span></button>
+                <button type="button" onclick="insertSingleBBCode('text', 'line', null);"><span style="">Line</span></button>
+                <button type="button" onclick="insertSingleBBCode('text', 'copyright', null);"><span style="">©</span></button>
+                <button type="button" onclick="insertSingleBBCode('text', 'registered', null);"><span style="">®</span></button>
+                <button type="button" onclick="insertSingleBBCode('text', 'tm', null);"><span style="">™</span></button>
+                <button type="button" onclick="insertSingleBBCode('text', 'bull', null);"><span style="">•</span></button>
+                <button type="button" onclick="insertBBCode('text', 'lt', null);"><span style="text-decoration:line-through;">Lt</span></button>
+                <button type="button" onclick="openSmileWindow('text');"><span>Smiles</span></button>
+                <br style="clear:left;" />
+            </div>
+        </div>
+        <label for="text">{LANG[text]}:*</label>
+        <textarea name="text" id="text" rows="4" cols="15">{TEXT}</textarea><br /><br />
+        <label style="padding-right:20px;">{LANG[captcha]}:*</label>
+        <img src="include/images/captcha.php" style="border:0;" alt="{LANG[captcha]}" />
+        <input type="text" id="captcha" name="captcha" value="" style="width:80px;vertical-align:super;" /><br />
+        <input type="hidden" name="post" id="post" value="sent" />
+        <input type="submit" name="submit" class="submit" value="{LANG[submit]}"/>
+    </fieldset>
+    </form>
+</div>
+{SPLIT}
+<div class="gbook_box">
+    <div class="gbook_header">{AUTHOR}</div>
+    <div class="gbook_body">
+        {TEXT}
+    </div>
+    <div class="gbook_footer">{DATE}</div>
+</div>
+{SPLIT}
+<table cellpadding="0" cellspacing="0" id="sub_navi">
+    <tr>
+        <td id="back">{PAGE-B}</td>
+        <td>{LANG[page]} {PAGE} {LANG[of]} {PAGES-C}</td>
+        <td id="forward">{PAGE-F}</td>
+    </tr>
+</table>

@@ -1,0 +1,25 @@
+<div id="google_map"></div>
+{SPLIT}
+<script type="text/javascript" src="{GOOGLE-MAP-API}"></script>
+<script type="text/javascript">
+    /* <![CDATA[ */
+    function initialize() {
+        if (GBrowserIsCompatible()) {
+            var map = new GMap2(document.getElementById("google_map"));
+            var Pos = new GLatLng({POSL}, {POSB});
+            var Marker = new GMarker(Pos);
+            map.setCenter(Pos, {ZOOM});
+            map.addOverlay(Marker);
+            var Html = "{INFOTEXT}";
+            Marker.openInfoWindowHtml(Html);
+            map.addControl(new GSmallMapControl());
+            map.addControl(new GMapTypeControl());
+            map.setMapType({MAPTYPE});
+        }
+    }
+
+    bindEvent(window, 'load', initialize);
+    bindEvent(window, 'unload', GUnload);
+
+    /* ]]> */
+</script>

@@ -1,0 +1,31 @@
+<h1>{LANG[news]} - {LANG[management]} - {LANG[comments]}</h1>
+<div id="msg">{MSG}</div>
+<div style="width:600px;margin:5px auto;">
+    <a href="{THIS}&amp;comments={ID}&amp;do=delpage&amp;offset={DELINDEX}" class="speciallink">{LANG[delete_comments_page]}</a><br />
+    <a href="{THIS}&amp;comments={ID}&amp;do=delall" class="speciallink">{LANG[delete_comments_all]}</a><br />
+</div>
+<table>
+    <tr>
+        <th>{LANG[author]}</th>
+        <th>{LANG[date]}</th>
+        <th>{LANG[edit_tbl]}</th>
+        <th>{LANG[delete]}</th>
+    </tr>
+    {SPLIT}
+    <tr class="{STYLE}">
+        <td>{AUTHOR}</td>
+        <td>{DATE}</td>
+        <td style="text-align:center;"><a href="{THIS}&amp;comments={ID}&amp;do=edit&amp;guid={GUID}&amp;page={PAGE}"><img src="include/admin/images/edit.png" alt="{LANG[edit_tbl]}" /></a></td>
+        <td style="text-align:center;"><a href="{THIS}&amp;comments={ID}&amp;do=del&amp;guid={GUID}&amp;page={PAGE}"><img src="include/admin/images/del.png" alt="{LANG[delete]}" /></a></td>
+    </tr>
+    {SPLIT}
+</table>
+<div style="width:600px;margin:0 auto;">
+    <table cellpadding="0" cellspacing="0" id="sub_navi">
+        <tr>
+            <td id="back">{PAGE-B}</td>
+            <td>{LANG[page]} {PAGE} {LANG[of]} {PAGES-C}</td>
+            <td id="forward">{PAGE-F}</td>
+        </tr>
+    </table>
+</div>

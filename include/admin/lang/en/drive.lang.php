@@ -1,0 +1,33 @@
+<?php
+$lang = array(
+    'drive'                 => 'Drive',
+    'submit'                => 'Submit',
+    'reset'                 => 'Reset',
+    'management'            => 'Management',
+    'G_HYBRID_MAP'          => 'Mixed view',
+    'G_NORMAL_MAP'          => 'Normal view',
+    'G_SATELLITE_MAP'       => 'Satellite view',
+    'key'                   => 'The Google-Maps-API-key',
+    'lang'                  => 'The language of the interface',
+    'legend'                => 'Configuration of the Google-Map',
+    'markertext'            => 'The text for marker',
+    'posb'                  => 'The position (Latitude)',
+    'posl'                  => 'The position (Longitude)',
+    'type'                  => 'The type of the map',
+    'updated'               => 'Settings successfully updated!',
+    'zoom'                  => 'The default zoom of the map',
+    'err'                   => 'The following errors occurrered',
+    'err_key'               => 'The Goolge-Maps-API-key is missing',
+    'err_key2long'          => 'The Goolge-Maps-API-key is too long',
+    'err_lang'              => 'The language token is missing',
+    'err_lang2long'         => 'The language token is too long',
+    'err_zoom'              => 'The zoom value is missing',
+    'err_zoom2long'         => 'The zoom value is too long',
+    'err_posl'              => 'The latitude is missing',
+    'err_posl2long'         => 'The latitude value is too long',
+    'err_posb'              => 'The longitude is missing',
+    'err_posb2long'         => 'The longitude value is too long',
+    'err_markertext'        => 'The text for the marker is missing',
+    'status_access_denied'  => 'Access denied!'
+);
+?>

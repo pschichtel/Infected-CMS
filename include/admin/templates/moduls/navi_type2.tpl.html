@@ -1,0 +1,35 @@
+<form action="{THIS}&amp;{DO}" method="post" accept-charset="utf-8">
+    <fieldset>
+        <legend>{LEGEND}</legend>
+        <label for="name">{LANG[name]}:</label>
+        <input type="text" name="name" id="name" value="{NAME}" /><br />
+        <label for="addr">{LANG[modul]}:</label>
+        <select name="addr" id="addr">
+                {ADDR}
+        </select><br />
+        <input type="hidden" name="type" value="2" />
+        <label for="level">{LANG[level]}:</label>
+        <input type="text" name="level" id="level" value="{LEVEL}" /><br />
+        <label for="pos">{LANG[position]}:</label>
+        <input type="text" name="pos" id="pos" value="{POS}" /><br />
+        <label for="visible">{LANG[visible]}:</label>
+        <select name="visible" id="visible">
+            <option value="1" {VISIBLE-TRUE}>{LANG[Yes]}</option>
+            <option value="0" {VISIBLE-FALSE}>{LANG[No]}</option>
+        </select><br />
+        <label for="menuid">{LANG[menu]}:</label>
+        <select name="menuid" id="menuid">
+            <option value="1" {MENU1}>1</option>
+            <option value="2" {MENU2}>2</option>
+            <option value="3" {MENU3}>3</option>
+            <option value="4" {MENU4}>4</option>
+            <option value="5" {MENU5}>5</option>
+        </select><br />
+        <label for="extern">{LANG[extern]}:</label>
+        <input type="checkbox" name="extern" id="extern" value="1" {EXTERN} /><br />
+        <div class="button_container">
+            <input type="submit" name="submit" class="submit" value="{LANG[submit]}" />
+            <input type="hidden" name="post" value="sent"/>
+        </div>
+    </fieldset>
+</form>

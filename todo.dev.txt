@@ -1,0 +1,220 @@
+                       ToDo-Liste des Infected CMS
+
+Prefixe:
+!               =>      Bug
++               =>      neues Feature
+~               =>      Änderung
+-               =>      Feature wird entfernt
+
+Dateinamenprefixe:
+m_              =>      include/contents/moduls/*.modul.php
+Am_             =>      include/admin/moduls/*.modul.php
+lib_            =>      include/includes/libs/*.lib.php
+func_           =>      include/includes/funcs/*.func.php
+class_          =>      include/includes/classes/*.class.php
+if_             =>      include/includes/interfaces/*.interface.php
+conf_           =>      include/includes/configs/*.conf.php
+excep_          =>      include/includes/exceptions/*.exception.php
+js_             =>      include/includes/javascripts/*.js
+tpl_            =>      include/templates/*.tpl.html
+Atpl_           =>      include/admin/templates/*.tpl.html
+lang_           =>      include/contents|admin/lang/*/*.lang.php
+box_            =>      include/content/boxes/*.box.php
+Abox_           =>      include/admin/boxes/*.box.php
+help_           =>      include/contents/helper/*.helper.php
+Ahelper         =>      include/admin/helper/*.helper.php
+css_            =>      include/designs/*/style/*.css
+Acss_           =>      include/admin/style/*.css
+loader          =>      include/includes/loader.php
+
+Besondere Bezeichner:
+index           =>      Frontpage
+admin           =>      Admincenter
+generell        =>      auf das komplette System bezogen
+database        =>      bezieht sich auf die Datenbank
+db_{TABLENAME}  =>      bezieht sich auf die Tabelle in der Datenbank
+moduls          =>      Alle Frontpage-Module
+Amoduls         =>      Alle Admin-Module
+templates       =>      Alle Frontpage-Templates
+Atemplates      =>      Alle Admin-Module
+lang            =>      Spacheinträge
+
+Suffixe:
+[X]             =>      Erledigt
+[.]             =>      in Arbeit
+[~]             =>      wird nur vielleicht umgesetzt
+[-]             =>      wird nicht umgesetzt/nicht umsetzbar
+[ ]             =>      steht aus
+!major          =>      markiert besonders große/aufwendige Punkte
+!low            =>      markiert Punkte mir niedriger Priorität
+!next           =>      markiert den wahrscheinlich nächsten Punkt
+
+################################################################################
+
+Version: 0.9 RC:
+! Am_admingroups: ALL-Recht'ler können das ALL-Recht nicht setzen               [X]
+! Am_admingroups: ALL-Recht auch ohne es zu besitzem setzbar                    [X]
+! m_self: benutzt noch _GET statt Info-Klasse (@gbook-page als Parameter)       [X]
+! lib_debug: Debug_triggerError(): undefinierte Indexe bei Callbacks            [X]
+! moduls,Amoduls: Anzahl der Seiten bei 0 Daten ist 0 statt 1                   [X]
+! Am_gbook: editieren geht nicht                                                [X]
+! generell: Ausnahme: $cfg in Info nicht verfügbar                              [X]
+! m_contact: Formular kann ausgenutzt werden                                    [X]
++ Am_admins: beim bearbeiten die aktuelle Gruppe auswahlen                      [X]
++ m_sitemap: Sitemap-Modul hinzufügen (XML)                                     [X]
++ Am_sitemap: Administration für die Sitemap                                    [-]
++ db_config: weitere Konfigurationseintrage (SEO, Captcha, ...)                 [X]
++ db_overview: neue Eintrage für die Übersicht                                  [X]
++ lib_seo: makeAddress() für mod_rewrite implementieren                         [X]
++ lib_seo: dynamsche Keywords aus Content generieren                            [-]
++ box_keywords: eine Box zur anzeige von Keywords hinzufügen                    [-]
++ js_eventBinder: Script zum Binden von Events hinzufügen                       [X]
++ class_design: Methode Design::addToBody($string) hinzufügen                   [X]
++ class_template: zusatzliches Template-Verzeichnis "other" mit ID 4            [X]
++ box_userconfig: benutzerdefinierte Einstellungen hinzugefügt                  [X]
++ db_bbcode: weitere BBCodes einfügen                                           [X]
++ Amoduls: seitenweises Löschen von Inhalten                                    [X]
++ Amoduls: alles auf einmal löschen                                             [X]
++ moduls,Amoduls: Eingabelängen überprüfen                                      [X]
++ class_design: Verarbeitung von malformed-Indextemplates                       [X]
++ m_hasher: Hasher-Modul hinzufügen                                             [X]
++ m_gbook: IP des Autors abspeichern                                            [X]
++ generell: ein Captcha programmieren                                           [X]
++ lib_ipbase: localhost wird nicht blockiert                                    [-]
++ lib_session: eigene Funktionen zur Sessionverwaltung                          [-]
++ m_contact: Senderinformation an Mail anfügen (IP, ...)                        [X]
++ Am_gbook: IP des Autors anzeigen                                              [X]
++ lib_text: URL als Tooltip in BBCode-Links anzeigen (Anti-Phishing)            [X]
++ class_template: Platzhalter für Designverzeichnis einfügen                    [X]
++ class_design: aktuellen Seite in der Navigation markieren                     [X]
++ Am_login: Anti-BruteForce: Login sperren oder verzögern bei Fehllogins        [X]
++ Am_login: Salted Hashes implementieren                                        [X]
++ class_lang: Platzhalter in Einträgen ermöglichen (__call() überladen)         [X]
++ class_config: __isset() überladen                                             [X]
++ lib_debug: Debug_dump_vars() zum Ausgeben mehrerer Variablen                  [X]
++ class_log: Klasse zum loggen hinzufügen                                       [X]
++ generell: Logging in Kern-Klassen und Index-Scripte einbauen                  [X]
+~ lib_text: quote-BBCode mit Funktion Text_quotations($text) parsen             [X]
+~ generell: Parameterübergabe für mod_rewrite anpassen (nur Frontpage)          [X]
+~ m_drive: Script ans Ende vom Body legen                                       [X]
+~ db_bbcode: mode-Spalte entfernen                                              [X]
+~ lib_text: mode-Parameter aus Text_parseText() entfernen                       [X]
+~ css_main: #submit zu .submit andern                                           [X]
+~ css_main: Stil vom default-Design andern, Hintergrund fixen                   [X]
+~ box_date: Monatsname übersetzen                                               [X]
+~ Amoduls: einige Module übersichtlicher gestalten                              [X]
+~ func_smtp_mail: Fehlercode zurückgeben statt das System abzubrechen           [X]
+~ Am_navi: Menü-Links auffalliger machen                                        [X]
+~ Acss_admin: Klasse für auffallige Links                                       [X]
+~ templates,Atemplates: subnavi mit Tabelle realisieren                         [X]
+~ Am_admingroups: nur Anzahl der Rechte anzeigen                                [X]
+~ moduls,Amoduls: Formulardaten besser prüfen                                   [X]
+~ Atpl_delete: Legend vom Modul setzbar                                         [X]
+~ Atpl_delete: umbenennen in 'confirm'                                          [X]
+~ class_template: bei fehlendem Template Standardfehlermeldung ersetzen         [X]
+~ Amoduls: Parameterwerte typensicher prüfen                                    [X]
+~ moduls,Amoduls: offers-Modul entfernen                                        [X]
+~ class_info: bei falschem Modul auf cms_std_modul umleiten                     [X]
+~ class_lang: Objekt zum Verwalten/Laden der Sprache statt getLang()            [X]
+~ m_gbook,m_contact: Captcha einbauen                                           [X]
+~ m_gbook,m_news: geparsed und ungeparsed speichern                             [X]
+~ Am_news: Admin-Benutzername als Author verwenden                              [X]
+~ generell: DEBUG-Konstante enthält DEBUG-Level für Logging                     [X]
+
+Nachtrag:
+! lib_text: URI-Parser schließt falsche Zeichen aus                             [X]
+! Am_news: Sendet noch die author-Variable statt den Adminnamen als Autor       [X]
+! Am_login: Weiterleitung zum Referer nimmt den Querystring nicht mit           [X]
+! class_lang: Sprache wird nicht geändert                                       [X]
+! lang: einige fehlerhafte oder überflüssige Spracheinträge                     [X]
+! m_gbook: Fehler bei Captcha-Abfrage und beim Senden der Daten an die DB       [X]
+! Amoduls: Rechte an der falschen Stelle abgefragt                              [X]
+! lib_text: wordwrapper arbeitet nicht wie erwartet                             [X]
+! generell: XSS-Lücken in einigen Formularen                                    [X]
++ generell: Reparse-Funktionen für Inhalte                                      [-]
++ lang: englische Übersetzung                                                   [X]
++ Atpl_index: select zum Ändern der Sprache einbauen                            [X]
+~ lang: umstrukturieren der Sprachdateien, global- und moduls-Dateien ablösen   [X]
+~ class_design,db_adminnavi: es kommt nur noch das Modul aus der Tabelle        [X]
+~ class_design,class_template: Sprachdatei übergeben                            [X]
+
+################################################################################
+
+Version 1.0 final:
+! class_menu: aktiver Punkt wird bei eigenen Inhalten nicht markiert            [X]
+! helper_xmlsitemap: funktioniert bei eigenen inhalten ebnfalls nicht           [X]
+! moduls: Layout per Titel zerstörbar => WordWrapper auch auf Titel anwenden    [X]
+! loggedIn() fehlerhaft ohne User-Agent                                         [X]
+! js_link-handler: Fehler im IE bei Click-Event                                 [X]
++ generell: Benutzerinhalte übersetzbar                                         [ ] !major
++ generell: Kategorien                                                          [ ] !major
++ generell: Kommentarfunktion                                                   [X] !major
++ generell: BBCode-UI bei Textfeldern hinzufügen                                [X]
++ Am_navi,Am_admins,Am_admingroups: add/edit Funktionalität überarbeiten        [X]
++ lib_admin: hinzufügen                                                         [~]
++ lib_admin: Funktion zur Ausgabe der Confirm-Seite hinzufügen                  [~]
++ Am_admins: "Passwort-Hashes neu berechnen"-Funktion                           [~]
++ lib_text: Restliche BBCodes implementieren                                    [X]
++ lib_bbcode: BBCodes in dieser Library auslagern                               [X]
++ lib_text: stringparser-Klasse von Christian Seiler zum parsen einsetzen       [X]
++ generell: einen Installer programmieren                                       [X]
++ m_news: News nur teilweise Anzeigen                                           [X]
++ m_news: Eine News ganz oben sticken                                           [~]
++ m_news: News-Kommentare                                                       [X]
++ m_news: News-Kategorien                                                       [ ]
++ m_news: Filtermöglichkeiten (nur Author X, nur Kategorie Y,...) + mod_rewrite [ ]
++ generell: erweitertes Logging                                                 [ ] !major
++ class_mysql: checkConnection() hinzugefügen um die Verbindung zu prüfen       [X]
++ if_sql: checkConnection() hinzugefügen um die Verbindung zu prüfen            [X]
++ class_dbexception: Klasse DBException für Datenbankausnahmen hinzufügen       [X]
++ generell: Exception-Handling hinzufügen                                       [X]
++ lib_Debug: exception_handler für nicht abgefangene Ausnahmen hinzufügen       [X]
++ lib_Debug: Funktion zum loggen ins Error-Log hinzufügen                       [X]
++ generell: Open Source Lizenz auswählen                                        [ ]
++ generell: Backup-Funktion hinzufügen                                          [ ] !major
++ class_template: addParams(array) hinzufügen                                   [X]
++ class_template: clearParams() hinzufügen                                      [X]
++ class_template: removeParams(array)                                           [X]
++ conf_core: date_default_timezone als Konstante angeben                        [X]
++ conf_core: default_charset als Konstante angeben                              [X]
++ conf_core: session_name als Konstante angeben                                 [X]
++ Amodul_admins,admingroups: mindest Passwortlänge, verbotene Zeichen im Namen  [X]
++ Amodul_news, _selfcontents: Preview-Funktion hinzufügen                       [ ]
++ lib_text: equal hinzugefügt für case-insensitive string-Vergleiche            [X]
++ excep_notimplemented: Exception für nicht implementierte Functionen           [X]
++ excep_config: Exception die von der Config-Klasse bei Fehlern geworfen wird   [X]
++ conf_core: Wert für die Maximalgröße von Logdateien                           [X]
++ lib_text: strip_bbcode() hinzufügen                                           [X]
++ admin: Session per GET übertragen (Cookies nicht mehr notwendig!)             [X]
++ box_partners: Box zum Anzeigen der Partner                                    [ ] !low
++ Amodul_self: Datum der Erstellung und letzten Bearbeitung hinzufügen          [X]
++ class_lang: Notfalls alle Sprachen durchsuchen                                [X]
+~ admin: Menü wie in index erstellen und umstrukturieren                        [X]
+~ db_admins: dyn Salts in eigene Tabellenspalte statt im Verbund mit dem Pwd    [X]
+~ admin: Adminrechte beim Login in der Session speichern                        [X]
+~ class_mysql: Exceptions werfen statt das Script einfach abzubrechen           [X]
+~ func_stats: Statisiken flexibler sammeln                                      [ ]
+~ class_template: setPrintParams zu setParams umbennen                          [X]
+~ class_template: printVars und printReplacements passender benennen            [X]
+~ lib_*: Funktionen als statischer Member einer Klasse anlegen                  [X]
+~ lib_user: check_right in hasRight umbenennen                                  [X]
+~ generell: SEO-Urls optimieren                                                 [X]
+~ generell: alles UTF-8 kompatibel machen                                       [X]
+~ generell: Refactoring in einigen Dateien => Performance + Speed               [X]
+~ loader: Scripte über absolute Pfade einbinden                                 [X]
+~ generell: Datum als DATETIME speichern statt als normaler String              [X]
+~ class_info: Methode zum Zurückgeben der Statusmeldung                         [X]
+~ admin: Rechte als serialisiertes Array speichern                              [ ]
+~ func_common: getBox in Template-Klasse verschieben                            [X]
+~ js_bbcode: Übersetzen                                                         [X]
+~ func_bbcode: Email-BBCodes "verschönern"                                      [ ]
+~ generell: Refactoring -> MVC => Performance + Struktur                        [.]
+- class_mysql: Injection-Detection aus query() entfernen (fehlender Parser)     [X]
+- modul_gbook: Titel entfernen                                                  [X]
+
+################################################################################
+
+Entwicklung eingestellt
+    -> Support immernoch aktiv
+    -> Framework in Entwicklung
+        => Infected CMS 2

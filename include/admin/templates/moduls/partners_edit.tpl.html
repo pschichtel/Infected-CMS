@@ -1,0 +1,20 @@
+<h1>{LANG[partners]} - {LANG[management]}</h1>
+<div id="msg">{MSG}</div>
+<div>
+    <form action="{THIS}&amp;edit={ID}&amp;page={PAGE}" method="post" accept-charset="utf-8">
+        <fieldset>
+            <legend>{LANG[new]}</legend>
+            <label for="name">{LANG[name]}:*</label>
+            <input type="text" name="name" id="name" value="{NAME}" /><br />
+            <label for="pageuri">{LANG[pageuri]}:*</label>
+            <input type="text" name="pageuri" id="pageuri" value="{PAGEURI}" /><br />
+            <label for="banneruri">{LANG[banneruri]}:*</label>
+            <input type="text" name="banneruri" id="banneruri" value="{BANNERURI}" /><br />
+            <div class="button_container">
+                <input type="submit" name="submit" class="submit" value="{LANG[submit]}" />
+                <input type="reset" name="reset" class="reset" value="{LANG[reset]}" />
+                <input type="hidden" name="edit" value="sent" />
+            </div>
+        </fieldset>
+    </form>
+</div>

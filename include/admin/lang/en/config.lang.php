@@ -1,0 +1,30 @@
+<?php
+$lang = array(
+    'config'                        => 'Configuration',
+    'cfg_cms_std_design'            => 'The default design',
+    'cfg_cms_std_lang'              => 'The default sprache',
+    'cfg_cms_std_modul'             => 'The default modul',
+    'cfg_cms_title'                 => 'The title of the CMS',
+    'cfg_cms_captcha_length'        => 'The length of the captcha',
+    'cfg_contact_lock'              => 'Mail-lock (in seconds)',
+    'cfg_contact_textlen'           => 'The maximum length of the messages',
+    'cfg_gbook_email_subject'       => 'The default subject of the mails',
+    'cfg_gbook_lock'                => 'Entry-lock (in seconds)',
+    'cfg_gbook_pps'                 => 'Entrys per page',
+    'cfg_gbook_textlen'             => 'The maximum length of an entry',
+    'cfg_news_pps'                  => 'News per page',
+    'cfg_partners_pps'              => 'Partners per page',
+    'cfg_txt_split_index'           => 'The maximum length of a word',
+    'cfg_seo_uri_rewrite'           => 'Use Mod_Rewrite?',
+    'cfg_news_cps'                  => 'Comments pro page',
+    'cfg_news_commentlength'        => 'Maximal length of a comment',
+    'cfg_news_shortenedlen'         => 'Length of the shortened news',
+    'Yes'                           => 'Yes',
+    'No'                            => 'No',
+    'submit'                        => 'Submit',
+    'reset'                         => 'Reset',
+    'status_changed'                => 'Configuration successfully saved!',
+    'status_error'                  => 'Saving not possible! One or more informations are missing or are too long.',
+    'status_access_denied'          => 'Access denied!'
+);
+?>

@@ -1,0 +1,85 @@
+<h1>{LANG[self]} - {LANG[management]}</h1>
+<form action="{THIS}" method="post" accept-charset="utf-8">
+    <fieldset>
+        <legend>{LANG[legend]}</legend>
+        <label for="name">{LANG[new-edit_name]}:</label>
+        <input type="text" name="name" id="name" value="{NAME}" /><br />
+        <br />
+        <p>{LANG[selfcontent]}:</p>
+        <div id="bbcode_container">
+            <script type="text/javascript" src="./?helper=jstranslate&amp;params=file-bbcode.lang-bbcode"></script>
+            <div style="text-align:right;" onclick="showHideElem(this.parentNode.getElementsByTagName('div')[1]);return false;"><a href="#" onclick="return false;">{LANG[bbcode_help_ui]}</a></div>
+            <div style="display:none;">
+                <button type="button" onclick="insertBBCode('selfcontent', 'b', null);"><span style="font-weight:bold;">B</span></button>
+                <button type="button" onclick="insertBBCode('selfcontent', 'u', null);"><span style="text-decoration:underline;">U</span></button>
+                <button type="button" onclick="insertBBCode('selfcontent', 'i', null);"><span style="font-style:italic">i</span></button>
+                <button type="button" onclick="insertURLBBCode('selfcontent');"><span style="color:blue;text-decoration:underline;">URL</span></button>
+                <button type="button" onclick="insertBBCode('selfcontent', 'email', null);"><span style="color:blue;text-decoration:underline;">Email</span></button>
+                <button type="button" onclick="insertBBCode('selfcontent', 'search', null);"><span style="color:blue;text-decoration:underline;">Suche</span></button>
+                <button type="button" onclick="insertImgBBCode('selfcontent');">IMG</button>
+                <button type="button" onclick="insertSizeBBCode('selfcontent');">S<span style="font-size:50%">IZE</span></button>
+                <button type="button" onclick="insertColorBBCode('selfcontent');"><span style="color:red;">Color</span></button>
+                <button type="button" onclick="insertFontBBCode('selfcontent');"><span style="font-family:'comic sans ms';">Font</span></button>
+                <button type="button" onclick="insertQuoteBBCode('selfcontent');"><span style="font-family:'Times New Roman';">Quote</span></button>
+                <button type="button" onclick="insertBBCode('selfcontent', 'center', null);">Center</button>
+                <button type="button" onclick="insertBBCode('selfcontent', 'right', null);">Right</button>
+                <button type="button" onclick="insertBBCode('selfcontent', 'justify', null);">Justify</button>
+                <button type="button" onclick="insertBBCode('selfcontent', 'pre', null);">PRE</button>
+                <button type="button" onclick="insertCodeBBCode('selfcontent');">&lt;CODE&gt;</button>
+                <button type="button" onclick="insertListBBCode('selfcontent');">Liste</button>
+                <button type="button" onclick="insertVideoBBCode('selfcontent');">Video</button>
+                <button type="button" onclick="insertBBCode('selfcontent', 'sub', null);"><span>Sub</span></button>
+                <button type="button" onclick="insertBBCode('selfcontent', 'sup', null);"><span>Super</span></button>
+                <button type="button" onclick="insertSingleBBCode('selfcontent', 'line', null);"><span style="">Line</span></button>
+                <button type="button" onclick="insertSingleBBCode('selfcontent', 'copyright', null);"><span style="">©</span></button>
+                <button type="button" onclick="insertSingleBBCode('selfcontent', 'registered', null);"><span style="">®</span></button>
+                <button type="button" onclick="insertSingleBBCode('selfcontent', 'tm', null);"><span style="">™</span></button>
+                <button type="button" onclick="insertSingleBBCode('selfcontent', 'bull', null);"><span style="">•</span></button>
+                <button type="button" onclick="insertBBCode('selfcontent', 'lt', null);"><span style="text-decoration:line-through;">Lt</span></button>
+                <button type="button" onclick="openSmileWindow('selfcontent');"><span>Smiles</span></button>
+                <br style="clear:left;" />
+            </div>
+        </div>
+        <textarea name="content" id="selfcontent" cols="100" rows="20">{SELFCONTENT}</textarea><br />
+        <label for="html">HTML:</label>
+        <input style="width:10px;" type="checkbox" name="html" id="html" {STATUS-HTML} /><br />
+        <label for="bbcode">BBCode:</label>
+        <input style="width:10px;" type="checkbox" name="bbcode" id="bbcode" {STATUS-BBCODE} /><br />
+        <label for="smiles">Smiles:</label>
+        <input style="width:10px;" type="checkbox" name="smiles" id="smiles" {STATUS-SMILES} /><br />
+        <div class="button_container">
+            <input type="submit" class="submit" value="{LANG[submit]}" />
+            <input type="reset" class="submit" value="{LANG[reset]}" />
+            <input type="hidden" name="post" value="sent" />
+        </div>
+    </fieldset>
+</form>
+<script type="text/javascript">
+//<![CDATA[
+    window.onkeypress = function(e) {
+        var modifier = false;
+        var charPressed;
+        if (e.altKey)
+        {
+            modifier = true
+        }
+        else if (e.modifiers & Event.ALT_MASK)
+        {
+            modifier = true
+        }
+        if (e.keyCode)
+        {
+            charPressed = e.keyCode;
+        }
+        else if (e.which)
+        {
+            charPressed = e.which;
+        }
+        
+        if (charPressed == 115 && modifier == true)
+        {
+            document.getElementById('selfcontent').parentNode.parentNode.submit();
+        }
+    }
+//]]>
+</script>

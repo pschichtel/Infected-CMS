@@ -1,0 +1,32 @@
+<?php
+$lang = array(
+    'news'                      => 'News',
+    'page'                      => 'Page',
+    'of'                        => 'of',
+    'newer'                     => 'newer news',
+    'older'                     => 'older news',
+    'signature'                 => 'News written by "%0%" at the %1% at %2%.',
+    'no_available'              => 'No news available at the moment.',
+    'read_more'                 => 'Read more',
+    'submit'                    => 'Submit',
+    'err'                       => 'The following errors occurrered',
+    'err_c_author_missing'      => 'Your name is missing!',
+    'err_c_author_toolong'      => 'Your name is too long! Maximal %0% characters.',
+    'err_c_text_missing'        => 'The comment text is missing!',
+    'err_c_text_toolong'        => 'Your comment is too long! Maximal %0% characters.',
+    'err_locked'                => 'You have already posted a comment to this article!',
+    'err_captcha'               => 'The Captcha-code is wrong',
+    'err_captchafail'           => 'The Captcha-code could not be loaded, refresh the form and try again.',
+    'err_comments_disallwed'    => 'Comments are disabled on this article.',
+    'quote'                     => 'Quote',
+    'comment_added'             => 'Comment postet!',
+    'comment_author'            => 'Your name',
+    'comment_text'              => 'The comment text',
+    'new_comment'               => 'Post a comment',
+    'no_comments'               => 'No comments available.',
+    'comment_posted_at'         => 'Posted at %0%',
+    'captcha'                   => 'Captcha',
+    'bbcode_help_ui'            => 'show/hide BBCode-help',
+    'comments'                  => 'Comments'
+);
+?>
